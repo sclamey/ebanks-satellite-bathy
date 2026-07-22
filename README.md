@@ -8,21 +8,21 @@ A multi-sensor satellite-derived bathymetry (SDB) framework for shallow, optical
     - Median deposit age of one year, indicating annual surface reworking
 
 # Workflow
-1. Quality assurance including saturation correction via mean minimum square error (MMSE) estimator (Zhang & Brainard, 2004)[https://doi.org/10.1364/JOSAA.21.002301]
+1. Quality assurance including saturation correction via minimum mean square error (MMSE) estimator ([Zhang & Brainard, 2004](https://doi.org/10.1364/JOSAA.21.002301))
 2. Relative radiometric normalisation
-    1. Multi-dimensional pseudo-invariant-feature selection (MDPS) (Paolini et al., 2006)[https://doi.org/1zot0.1080/01431160500183057]
-    2. Harmonisation to reference image via RANSAC (Xu et al., 2021)[https://doi.org/10.1080/01431161.2021.1934912]
-3. Feature engineering and multicollinearity pruning ()
-4. BlockCV: spatial k-fold cross-validation (Valavi et al., 2019)[https://doi.org/10.1111/2041-210X.13107]
-5. XGBoost regression including prediction interval width (Chen and Guestrin, 2016)[https://github.com/dmlc/xgboost]
+    1. Multi-dimensional pseudo-invariant-feature selection (MDPS) ([Paolini et al., 2006](https://doi.org/10.1080/01431160500183057))
+    2. Harmonisation to reference image via RANSAC ([Xu et al., 2021](https://doi.org/10.1080/01431161.2021.1934912))
+3. Feature engineering and multicollinearity pruning (VIF, condition number, variance decomposition proportion)
+4. BlockCV: spatial k-fold cross-validation ([Valavi et al., 2019](https://doi.org/10.1111/2041-210X.13107))
+5. XGBoost regression including prediction interval width ([Chen & Guestrin, 2016](https://doi.org/10.1145/2939672.2939785))
 6. Non-parametric change analysis
     1. DEM of difference
     2. Mann-Kendall / Theil-Sen slope
-    3. Stratigraphic volume analysis (Pearson et al., 2022)[https://doi.org/10.1016/j.geomorph.2022.108185]
+    3. Stratigraphic volume analysis ([Pearson et al., 2022](https://doi.org/10.1016/j.geomorph.2022.108185))
 
 # Data note
 
-Imagery (WorldView-2, PlanetScope) and reference bathymetry (Roelfsema et al. 2014; Queensland Government EOMAP 2024) are third-party datasets and are not redistributed here. Sources and access details are documented in /docs.
+Imagery (WorldView-2, PlanetScope) and reference bathymetry ([Roelfsema et al. 2014](https://doi.org/10.1016/j.rse.2014.05.001); EOMAP 2024) are third-party datasets and are not redistributed here. Sources and access details are documented in /docs.
 
 # Licence
 
@@ -31,3 +31,9 @@ Code released under the MIT Licence. Thesis text and figures under CC BY 4.0. Th
 # Citation
 
 Lamey, S. (2026). Mapping the shifting sands: Over a decade of bathymetric evolution at the Eastern Banks, Moreton Bay, Queensland [Master's thesis, The University of Queensland].
+
+# Acknowledgements
+
+I offer our sincere thanks to our supervisors, Doctor Dylan Cowley, Associate Professor Chris Roelfsema, and Mister David Enrique Carrasco Rivera at the University of Queensland. These pioneers have paved the way for the next generation of coastal researchers at the Eastern Banks. Without their unyielding guidance and support, this thesis would not have come to fruition. I hold in the highest regard their profound contributions to the frontier (and, oftentimes, conundrum) that is remote sensing of coastal ecosystems.
+
+I also acknowledge the Quandamooka peoples, Traditional Owners of Minjerribah, Mulgumpin and the Sea Country in which the Eastern Banks are situated. I acknowledge their ongoing connections to Country and community. I pay my respects to ancestors who stewarded this land for millennia, which has enabled this very research to manifest. It is my hope that this research may be of use in the ongoing management and protection of this vital Sea Country.
