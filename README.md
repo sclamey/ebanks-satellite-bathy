@@ -8,14 +8,14 @@ A multi-sensor satellite-derived bathymetry (SDB) framework for shallow, optical
     - Median deposit age of one year, indicating annual surface reworking
 
 # Workflow
-1. Quality assurance including saturation correction via minimum mean square error (MMSE) estimator ([Zhang & Brainard, 2004](https://doi.org/10.1364/JOSAA.21.002301))
-2. Relative radiometric normalisation
+1. Quality assurance including [saturation correction via minimum mean square error (MMSE) estimator](04_2_wv2_zhang-oversat-corr.ipynb) ([Zhang & Brainard, 2004](https://doi.org/10.1364/JOSAA.21.002301))
+2. [Relative radiometric normalisation](05_1_PIF-normalisation2.ipynb)
     1. Multi-dimensional pseudo-invariant-feature selection (MDPS) ([Paolini et al., 2006](https://doi.org/10.1080/01431160500183057))
     2. Harmonisation to reference image via RANSAC ([Xu et al., 2021](https://doi.org/10.1080/01431161.2021.1934912))
-3. Feature engineering and multicollinearity pruning (VIF, condition number, variance decomposition proportion)
+3. [Feature engineering and multicollinearity pruning (VIF, condition number, variance decomposition proportion)](06_0_stack2.ipynb)
 4. BlockCV: spatial k-fold cross-validation ([Valavi et al., 2019](https://doi.org/10.1111/2041-210X.13107))
-5. XGBoost regression including prediction interval width ([Chen & Guestrin, 2016](https://doi.org/10.1145/2939672.2939785))
-6. Non-parametric change analysis
+5. [XGBoost regression including prediction interval width](11_0_time-series.ipynb) ([Chen & Guestrin, 2016](https://doi.org/10.1145/2939672.2939785))
+6. [Non-parametric change analysis](13_0_analysis2.ipynb)
     1. DEM of difference
     2. Mann-Kendall / Theil-Sen slope
     3. Stratigraphic volume analysis ([Pearson et al., 2022](https://doi.org/10.1016/j.geomorph.2022.108185))
