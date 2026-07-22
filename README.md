@@ -18,7 +18,7 @@ A multi-sensor satellite-derived bathymetry (SDB) framework for shallow, optical
     2. Harmonisation to reference image via RANSAC ([Xu et al., 2021](https://doi.org/10.1080/01431161.2021.1934912))
 4. [Feature engineering and multicollinearity pruning](06_feature-stacking.ipynb)
 5. Spatial k-fold cross-validation (i.e BlockCV) ([Valavi et al., 2019](https://doi.org/10.1111/2041-210X.13107))
-6. [XGBoost regression including prediction interval width](08_time-series.ipynb) ([Chen & Guestrin, 2016](https://doi.org/10.1145/2939672.2939785))
+6. [XGBoost regression](08_time-series.ipynb) including prediction interval width ([Chen & Guestrin, 2016](https://doi.org/10.1145/2939672.2939785))
 7. [Non-parametric change analysis](09_analysis.ipynb)
     1. DEM of difference
     2. Mann-Kendall / Theil-Sen slope
