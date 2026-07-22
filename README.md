@@ -9,17 +9,17 @@ A multi-sensor satellite-derived bathymetry (SDB) framework for shallow, optical
 
 # Workflow
 1. Preprocessing
-    2. [AOI](01_aoi.ipynb)
-    3. [Grid alignment](02_grid-align.ipynb)
-    4. [Clipping](03_clip.ipynb), etc.
-1. Quality assurance including [saturation correction](04_saturation-corr.ipynb) via minimum mean square error (MMSE) estimator ([Zhang & Brainard, 2004](https://doi.org/10.1364/JOSAA.21.002301))
-2. [Relative radiometric normalisation](05_PIF-normalisation.ipynb)
+    1. [AOI](01_aoi.ipynb)
+    2. [Grid alignment](02_grid-align.ipynb)
+    3. [Clipping](03_clip.ipynb), etc.
+2. Quality assurance including [saturation correction](04_saturation-corr.ipynb) via minimum mean square error (MMSE) estimator ([Zhang & Brainard, 2004](https://doi.org/10.1364/JOSAA.21.002301))
+3. [Relative radiometric normalisation](05_PIF-normalisation.ipynb)
     1. Multi-dimensional pseudo-invariant-feature selection (MDPS) ([Paolini et al., 2006](https://doi.org/10.1080/01431160500183057))
     2. Harmonisation to reference image via RANSAC ([Xu et al., 2021](https://doi.org/10.1080/01431161.2021.1934912))
-3. [Feature engineering and multicollinearity pruning (VIF, condition number, variance decomposition proportion)](06_feature-stacking.ipynb)
-4. Spatial k-fold cross-validation (i.e BlockCV) ([Valavi et al., 2019](https://doi.org/10.1111/2041-210X.13107))
-5. [XGBoost regression including prediction interval width](08_time-series.ipynb) ([Chen & Guestrin, 2016](https://doi.org/10.1145/2939672.2939785))
-6. [Non-parametric change analysis](09_analysis.ipynb)
+4. [Feature engineering and multicollinearity pruning (VIF, condition number, variance decomposition proportion)](06_feature-stacking.ipynb)
+5. Spatial k-fold cross-validation (i.e BlockCV) ([Valavi et al., 2019](https://doi.org/10.1111/2041-210X.13107))
+6. [XGBoost regression including prediction interval width](08_time-series.ipynb) ([Chen & Guestrin, 2016](https://doi.org/10.1145/2939672.2939785))
+7. [Non-parametric change analysis](09_analysis.ipynb)
     1. DEM of difference
     2. Mann-Kendall / Theil-Sen slope
     3. Stratigraphic volume analysis ([Pearson et al., 2022](https://doi.org/10.1016/j.geomorph.2022.108185))
